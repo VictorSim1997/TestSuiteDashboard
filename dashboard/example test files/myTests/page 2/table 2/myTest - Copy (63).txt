@@ -1,0 +1,9 @@
+Product:: Airmid
+Branch:: feature 3
+Type:: release
+Platform:: Windows 8
+TestName:: test 3
+Time:: 2018/09/30 13:00:00
+Refresh:: 120
+Pass:: 137
+Fail:: 13

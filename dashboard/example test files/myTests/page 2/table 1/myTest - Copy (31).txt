@@ -1,0 +1,9 @@
+Product:: Airmid
+Branch:: develop
+Type:: release
+Platform:: Windows 7
+TestName:: test 1
+Time:: 2018/09/30 13:00:00
+Refresh:: 120
+Pass:: 150
+Fail:: 0
