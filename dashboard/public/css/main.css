@@ -1,0 +1,211 @@
+@font-face {
+    font-family: Lato-Regular;
+    src: url('../fonts/Lato/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: Lato-Bold;
+    src: url('../fonts/Lato/Lato-Bold.ttf');
+}
+
+/*General appearance of webpage*/
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+    font-family: Lato-Regular, Arial, sans-serif;
+    /* Put this below for white text */
+    color: #f2f2f2;
+    /* For green text */
+    color: #00ad5f;
+    background: #3F3F3F;
+}
+
+/* Header containing countdown timers */
+.timers {
+    background: #040404;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 0.69em;
+    line-height: 2.2;
+}
+
+.timers span {
+    color: #31bc86;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    display: inline-block;
+}
+
+.timers > span {
+    padding: 0 1em;
+}
+
+.timers span.right {
+    float: right;
+}
+
+
+/* For coloured stripes between items */
+.resultPages > div > div {
+    width: 100%;
+    padding: 0.17em 0 1.5em 0;
+    /*margin: 1.5em 0;*/
+}
+
+.resultPages > div > div:nth-child(2n) {
+    background: #6e6e6e;
+}
+
+/*Special rules to give first and last stripe of a page if you wish*/
+
+/*.resultPages > div > div:first-child {
+    padding: 2em 0 1em 0;
+}
+
+.resultPages > div > div:last-child {
+    padding: 1em 0 2em 0;
+}*/
+
+/* For an item (title and table) */
+section {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Defining title appearance*/
+.title {
+    font-family: Lato-Bold;
+}
+
+.title span {
+    padding: 0em 2em 0em 0em;
+}
+
+/* For a table component */
+section table {
+    border-collapse: collapse;
+    background: #393939;
+    margin: 0 0 0 2em;
+}
+
+section td, section th {
+    padding: 0.2em;
+    font-size: 15px;
+    text-align: center;
+    height: 30.4px;
+}
+
+section th {
+    font-family: Lato-Bold;
+    background-color: #222222;
+    width: 200px;
+}
+
+.passFailHeader {
+    width: 100px;
+}
+
+section td {
+    color: #f2f2f2;
+    width: 100px;
+}
+
+.testSuite {
+    color: inherit;
+}
+
+/*tbody tr:nth-child(2n) {
+    background-color: #282828;
+}*/
+
+/* Displaying which page dashboard is currrently on */
+.footer {
+    background: #3F3F3F;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 3px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.current {
+    background-color: #717171;
+}
+
+/* For errors page */
+.lastPage {
+    /* Useful when showing all pages */
+    /*height: 100vh;*/
+    max-width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+#syntaxContainer > div, #layoutContainer > div {
+    overflow-y: auto;
+    height: 38vh;
+}
+
+.lastPage table {
+    font-size: 13px;
+    width: 100%;
+}
+
+.lastPage td {
+    vertical-align: top;
+    width: 50%;
+    padding: 0.5em 2em;
+    display: table-cell;
+}
+
+#layoutContainer {
+    position: absolute;
+    top: 43vh;
+    width: 100%;
+}
+
+.lastPage p {
+    padding: 0em 0em 0em 2em;
+    font-size: 13px;
+}
+
+#goodSyntax, #goodLayout {
+    font-size: 16px;
+}
+
+/* Setting pass fail stale colours */
+.greenBackground {
+    background-color: #31BC86;
+}
+
+.redBackground {
+    background-color: #E46A6B;
+}
+
+.staleBackground {
+    background-color: #393939;
+}
+
+/* For config file error*/
+.configErr {
+    font-size: 7vh;
+    height: 95vh;
+    line-height: 95vh;
+    text-align: center;
+}
+
+.configErr > p {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}

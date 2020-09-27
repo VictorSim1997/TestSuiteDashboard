@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Suite Results</title>
+    <meta name="description" content="Summary of test suite results from Jenkins pipeline" />
+    <meta name="keywords" content="Best Dashboard Eva" />
+    <meta name="author" content="Victor Sim" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="timers clearfix">
+            <span>Checking for stale builds in: <span id="staleCounter">Initialising . . . This may take up to 1 </span> minute(s)</span>
+            <span class="right">Switching pages in: <span id="pageCounter"></span></span>
+        </div>
+        <div class="resultPages"></div>
+        <div class="lastPage">
+            <div id="syntaxContainer">
+                <h3>Syntax Faults</h3>
+                <div>
+                    <p id="goodSyntax">Nothing to report.</p>
+                    <table></table>
+                </div>
+            </div>
+            <div id="layoutContainer">
+                <h3>Layout</h3>
+                <div>
+                    <p id="goodLayout">Nothing to report.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+        </div>
+    </div><!-- /container -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
