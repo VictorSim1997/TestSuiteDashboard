@@ -1,0 +1,26 @@
+{
+  "name": "nodejs_dashboard",
+  "version": "1.0.0",
+  "description": "This program requires you to have Node.js and npm modules:",
+  "main": "index.js",
+  "dependencies": {
+    "chokidar": "^3.4.2",
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictorSim1997/TestSuiteDashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VictorSim1997/TestSuiteDashboard/issues"
+  },
+  "homepage": "https://github.com/VictorSim1997/TestSuiteDashboard#readme"
+}
